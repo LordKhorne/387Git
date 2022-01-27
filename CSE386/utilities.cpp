@@ -59,7 +59,7 @@ bool approximatelyEqual(double a, double b) {
 
 bool approximatelyZero(double a) {
 	/* CSE 386 - todo  */
-	return false;
+	return glm::abs(a) <= EPSILON;
 }
 
 /**

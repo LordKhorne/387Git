@@ -30,7 +30,13 @@ void resize(int width, int height) {
 	glutPostRedisplay();
 }
 int main(int argc, char* argv[]) {
-	graphicsInit(argc, argv, __FILE__);
+	
+	cout << approximatelyZero(0.0) << endl;
+	cout << approximatelyZero(0.00000001) << endl;
+	cout << approximatelyZero(-0.0000001) << endl;
+	cout << approximatelyZero(-0.1) << endl;
+
+	/*graphicsInit(argc, argv, __FILE__);
 
 	glutDisplayFunc(render);
 	glutReshapeFunc(resize);
@@ -41,5 +47,5 @@ int main(int argc, char* argv[]) {
 
 	glutMainLoop();
 
-	return 0;
+	return 0;*/
 }
