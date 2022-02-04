@@ -30,9 +30,10 @@ void resize(int width, int height) {
 	glutPostRedisplay();
 }
 int main(int argc, char* argv[]) {
-	
-	cout << approximatelyZero(0.0) << endl;
-	cout << approximatelyZero(0.00000001) << endl;
+
+	cout << directionInRadians((dvec2(2, 10)), (dvec2(3, 11))) << endl;
+	cout << directionInRadians(dvec2(0, -2)) << endl;
+	/*cout << approximatelyZero(0.00000001) << endl;
 	cout << approximatelyZero(-0.0000001) << endl;
 	cout << approximatelyZero(-0.1) << endl;
 
@@ -94,7 +95,8 @@ int main(int argc, char* argv[]) {
 	cout << areaOfTriangle(-3.0, 4.0, 5.0) << endl;
 	cout << areaOfTriangle(3.0, 4.0, 50.0) << endl;
 	cout << areaOfTriangle(0.0, 0.0, 3.0, 0.0, 0.0, 4.0) << endl;
-	
+	*/
+
 
 	/*graphicsInit(argc, argv, __FILE__);
 
